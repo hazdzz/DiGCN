@@ -40,7 +40,7 @@ def get_parameters():
     parser.add_argument('--gso_type', type=str, default='rw_renorm_adj', \
                         help='graph shift operator, default as rw_renorm_adj')
     parser.add_argument('--pr_type', type=str, default='pr', choices=['pr', 'ppr'], \
-                        help='default as ppr')
+                        help='default as pr')
     parser.add_argument('--alpha', type=float, default=0.2, help='transport probability alpha')
     parser.add_argument('--K', type=int, default=2, help='K layer')
     parser.add_argument('--lr', type=float, default=0.01, help='learning rate, defaut as 0.01')

@@ -20,7 +20,7 @@ class DiGCN(nn.Module):
         for k in range(self.K-1):
             x = self.graph_convs[k](x, filter)
             x = self.relu(x)
-        x = self.dropout(x)
+            x = self.dropout(x)
         x = self.graph_convs[-1](x, filter)
         x = self.log_softmax(x)
 
